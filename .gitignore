@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependências e Builds
+node_modules/
+dist/
+dist-ssr/
+out/
+
+# Ambientes e Segredos (Ajustado para cobrir variações de .env)
+.env
+.env.*
+!.env.example
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+*.local
+
+# Editores de Código (Ajustado para o VS Code e JetBrains)
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

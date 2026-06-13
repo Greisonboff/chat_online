@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Estilos para a barra de rolagem */
+/* Mudando a cor da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+textarea::-webkit-scrollbar {
+  width: 0px;
+}
+
+div[data-mensage="true"]::after {
+  content: '';
+  position: relative;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #c0e3af transparent transparent transparent;
+  left: 100px;
+  top: -2px;
+  width: 12px;
+}
+
+div.firist-message-column-right::after {
+  content: '';
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent transparent transparent #a1da87;
+  right: 3px;
+  top: 7px;
+}
+
+div.firist-message-column-left::before {
+  content: '';
+  position: relative;
+  width: 12px;
+  height: 12px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: transparent #e3f5e0 transparent transparent;
+  left: 3px;
+  top: 7px;
+}
+
+div.fundoModal{
+  background-image: url('/public/fundo1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
